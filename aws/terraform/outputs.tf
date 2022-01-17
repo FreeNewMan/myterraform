@@ -13,3 +13,11 @@ output "aws_region" {
 }
 
 
+output "instance_ip_addr" {
+  value = aws_instance.web.private_ip
+}
+
+output "aws_subnet_id" {
+  value = aws_instance.web.subnet_id
+}
+
